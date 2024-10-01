@@ -14,31 +14,73 @@ struct WelcomePageView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer()
-                Text("Welcome")
-                    .font(.custom("Kameron", size: 40))
-                Text("to")
+                HStack {
+                    ZStack {
+                        Circle()
+                            .fill(.button.opacity(0.8))
+                            .stroke(.text, lineWidth: 1)
+                            .frame(width: 100, height: 100)
+                        Image("whiteApple")
+                            .resizable()
+                            .frame(width: 60, height: 60)
+                    }
+                    ZStack {
+                        Circle()
+                            .fill(.button.opacity(0.8))
+                            .stroke(.secondary, lineWidth: 1)
+                            .frame(width: 50, height: 50)
+                        Image("whiteApple")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                    }
+                    ZStack {
+                        Circle()
+                            .fill(.button.opacity(0.8))
+                            .stroke(.secondary, lineWidth: 1)
+                            .frame(width: 30, height: 30)
+                        Image("whiteApple")
+                            .resizable()
+                            .frame(width: 15, height: 15)
+                    }
+                }
+                Text("Hey! Welcome")
                     .font(.custom("Kameron", size: 30))
-                Text("VashFit")
-                    .font(.custom("Kameron", size: 50))
-                Text("Don’t wait")
-                    .font(.custom("Kameron", size: 50))
-                Text("Begin Today")
-                    .font(.custom("Kameron", size: 35))
-                Spacer()
+                    .padding(.top)
+                Text("Your journey to a healthier")
+                    .font(.custom("Kameron", size: 15))
+                    .foregroundStyle(.secondary)
+                Text("fitter, and more balanced life starts here")
+                    .font(.custom("Kameron", size: 15))
+                    .foregroundStyle(.secondary)
+                    .padding(.bottom)
                 ButtonStyleView(
-                      buttonWidth: 200,
-                      buttonHeight: 40,
-                      backGround: .blue,    // Ensure correct color
-                      textColor: .white,
-                      cornerRadius: 15,
-                      text: "Next",
-                      action: {
-                          // Test action
-                          print("Button tapped")
-                      },
-                      destination: GenderSelectView(), disableButton: .constant(true)  // Make sure GenderSelectView exists
-                  )
-                .padding(.bottom)
+                    buttonWidth: 300,
+                    buttonHeight: 50,
+                    backGround: .button,
+                    textColor: .white,
+                    cornerRadius: 10,
+                    text: "Get started",
+                    action: {
+                        // Test action
+                        print("Button tapped")
+                    },
+                    destination: GenderSelectView(), disableButton: .constant(true)
+                )
+                .padding(0.1)
+                ButtonStyleView(
+                    buttonWidth: 300,
+                    buttonHeight: 50,
+                    backGround: .backGroundSecond,
+                    textColor: .text,
+                    cornerRadius: 10,
+                    text: "Already have account",
+                    action: {
+                        // Test action
+                        print("Button tapped")
+                    },
+                    destination: LoginView(), disableButton: .constant(true)
+                )
+                Spacer()
             }
             .foregroundColor(.text)
         }

@@ -20,7 +20,7 @@ struct GenderSelectView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 Text("What is your gender ?")
-                    .font(.custom("Kameron", size: 30))
+                    .font(.custom("Kameron", size: 28))
                     .foregroundStyle(.text)
                     .padding()
                 Spacer()

@@ -18,7 +18,7 @@ struct MainGoalSelectView: View {
             VStack {
                 Spacer()
                 Text("What is your main goal?")
-                    .font(.custom("Kameron", size: 30))
+                    .font(.custom("Kameron", size: 28))
                     .foregroundStyle(.text)
                     .padding()
                 
@@ -30,10 +30,10 @@ struct MainGoalSelectView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(selectedGoal == .loseWeight ? .button : .clear)
-                            .frame(width: 360, height: 90)
+                            .frame(width: 350, height: 80)
                         RoundedRectangle(cornerRadius: 10)
                             .fill(.backGroundSecond)
-                            .frame(width: 350, height: 80)
+                            .frame(width: 340, height: 70)
                             .overlay {
                                 Text(Goal.loseWeight.rawValue)
                                     .font(.custom("Kameron", size: 25))
@@ -41,6 +41,7 @@ struct MainGoalSelectView: View {
                             }
                     }
                 })
+                .padding(.horizontal)
                 
                 // Button for "Gain muscle mass?"
                 Button(action: {
@@ -50,10 +51,10 @@ struct MainGoalSelectView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(selectedGoal == .gainMuscle ? .button : .clear)
-                            .frame(width: 360, height: 90)
+                            .frame(width: 350, height: 80)
                         RoundedRectangle(cornerRadius: 10)
                             .fill(.backGroundSecond)
-                            .frame(width: 350, height: 80)
+                            .frame(width: 340, height: 70)
                             .overlay {
                                 Text(Goal.gainMuscle.rawValue)
                                     .font(.custom("Kameron", size: 25))
@@ -61,6 +62,7 @@ struct MainGoalSelectView: View {
                             }
                     }
                 })
+                .padding(.horizontal)
                 
                 // Button for "Stay fit?"
                 Button(action: {
@@ -70,10 +72,10 @@ struct MainGoalSelectView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(selectedGoal == .stayFit ? .button : .clear)
-                            .frame(width: 360, height: 90)
+                            .frame(width: 350, height: 80)
                         RoundedRectangle(cornerRadius: 10)
                             .fill(.backGroundSecond)
-                            .frame(width: 350, height: 80)
+                            .frame(width: 340, height: 70)
                             .overlay {
                                 Text(Goal.stayFit.rawValue)
                                     .font(.custom("Kameron", size: 25))
@@ -81,6 +83,7 @@ struct MainGoalSelectView: View {
                             }
                     }
                 })
+                .padding(.horizontal)
                 
                 Spacer()
                 
@@ -90,15 +93,15 @@ struct MainGoalSelectView: View {
                     ButtonStyleView(
                         buttonWidth: 200,
                         buttonHeight: 40,
-                        backGround: .button, // Change color based on selection
+                        backGround: .button,
                         textColor: .white,
                         cornerRadius: 10,
                         text: "Next",
                         action: {
                             print("Selected Goal: \(selectedGoal.rawValue)")
                         },
-                        destination: HomePageView(),
-                        disableButton: .constant(testing)  // Disable if no goal is selected
+                        destination: ActivitiesSelectView(),
+                        disableButton: .constant(testing)
                     )
                     .padding(.bottom)
                 } else {
@@ -106,14 +109,14 @@ struct MainGoalSelectView: View {
                     ButtonStyleView(
                         buttonWidth: 200,
                         buttonHeight: 40,
-                        backGround: .secondary, // Change color based on selection
+                        backGround: .secondary,
                         textColor: .white,
                         cornerRadius: 10,
                         text: "Next",
                         action: {
                             print("Selected Goal: \(selectedGoal.rawValue)")
                         },
-                        destination: HomePageView(),
+                        destination: ActivitiesSelectView(),
                         disableButton: .constant(testing)  // Disable if no goal is selected
                     )
                     .padding(.bottom)

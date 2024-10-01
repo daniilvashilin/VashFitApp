@@ -15,7 +15,7 @@ struct HeightSelectView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 Text("What is your Height?")
-                    .font(.custom("Kameron", size: 30))
+                    .font(.custom("Kameron", size: 28))
                     .foregroundStyle(.text)
                     .padding(.bottom)
                 

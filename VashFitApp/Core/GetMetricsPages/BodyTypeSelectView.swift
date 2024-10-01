@@ -20,7 +20,7 @@ struct BodyTypeSelectView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 Text("How would you ")
-                    .font(.custom("Kameron", size: 30))
+                    .font(.custom("Kameron", size: 28))
                     .foregroundStyle(.text)
                     .padding(.top)
                 Text("describe your body type?")

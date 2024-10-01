@@ -29,6 +29,7 @@ struct ButtonStyleView<Destination: View>: View {
                 .background(backGround)
                 .foregroundColor(textColor)
                 .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+                .font(.custom("Kameron", size: 18))
         }
         .disabled(disableButton == false)
         NavigationLink(destination: destination, isActive: $isNavigating) {

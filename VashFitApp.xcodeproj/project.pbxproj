@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,14 @@
 		49A309182CA61F5D00EA1873 /* BodyTypeSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A309172CA61F5D00EA1873 /* BodyTypeSelectView.swift */; };
 		49A3091A2CA622EB00EA1873 /* BodyTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A309192CA622EB00EA1873 /* BodyTypeModel.swift */; };
 		49A3091C2CA9A96D00EA1873 /* MainGoalSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A3091B2CA9A96D00EA1873 /* MainGoalSelectView.swift */; };
+		49A3091E2CAAF3CA00EA1873 /* ActivitiesSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A3091D2CAAF3CA00EA1873 /* ActivitiesSelectView.swift */; };
+		49A309202CAB0C9900EA1873 /* WaterDrinkSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A3091F2CAB0C9900EA1873 /* WaterDrinkSelectView.swift */; };
+		49EFED0D2CAB4F9100A2BBD3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED0C2CAB4F9100A2BBD3 /* LoginView.swift */; };
+		49EFED0F2CAB53AD00A2BBD3 /* TestingVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED0E2CAB53AD00A2BBD3 /* TestingVIew.swift */; };
+		49EFED112CAB58B700A2BBD3 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED102CAB58B700A2BBD3 /* RegisterView.swift */; };
+		49EFED132CAB59EF00A2BBD3 /* MetricsAllSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED122CAB59EF00A2BBD3 /* MetricsAllSetView.swift */; };
+		49EFED152CAC9EDF00A2BBD3 /* WaterDrinkSelectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED142CAC9EDF00A2BBD3 /* WaterDrinkSelectModel.swift */; };
+		49EFED182CACA3DC00A2BBD3 /* MeshGradientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED172CACA3DC00A2BBD3 /* MeshGradientViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +62,14 @@
 		49A309172CA61F5D00EA1873 /* BodyTypeSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTypeSelectView.swift; sourceTree = "<group>"; };
 		49A309192CA622EB00EA1873 /* BodyTypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTypeModel.swift; sourceTree = "<group>"; };
 		49A3091B2CA9A96D00EA1873 /* MainGoalSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGoalSelectView.swift; sourceTree = "<group>"; };
+		49A3091D2CAAF3CA00EA1873 /* ActivitiesSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesSelectView.swift; sourceTree = "<group>"; };
+		49A3091F2CAB0C9900EA1873 /* WaterDrinkSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterDrinkSelectView.swift; sourceTree = "<group>"; };
+		49EFED0C2CAB4F9100A2BBD3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		49EFED0E2CAB53AD00A2BBD3 /* TestingVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingVIew.swift; sourceTree = "<group>"; };
+		49EFED102CAB58B700A2BBD3 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		49EFED122CAB59EF00A2BBD3 /* MetricsAllSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsAllSetView.swift; sourceTree = "<group>"; };
+		49EFED142CAC9EDF00A2BBD3 /* WaterDrinkSelectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterDrinkSelectModel.swift; sourceTree = "<group>"; };
+		49EFED172CACA3DC00A2BBD3 /* MeshGradientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshGradientViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +124,8 @@
 		49A308DC2CA474EC00EA1873 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				49EFED162CACA3C900A2BBD3 /* MeshGrdient */,
+				49EFED0B2CAB4F7500A2BBD3 /* LoginAndRegister */,
 				49A309062CA4845300EA1873 /* ButtonStyle */,
 				49A308EF2CA4778100EA1873 /* GetStartedPages */,
 				49A308EE2CA4777400EA1873 /* GetMetricsPages */,
@@ -198,6 +216,10 @@
 				49A309172CA61F5D00EA1873 /* BodyTypeSelectView.swift */,
 				49A309192CA622EB00EA1873 /* BodyTypeModel.swift */,
 				49A3091B2CA9A96D00EA1873 /* MainGoalSelectView.swift */,
+				49A3091D2CAAF3CA00EA1873 /* ActivitiesSelectView.swift */,
+				49A3091F2CAB0C9900EA1873 /* WaterDrinkSelectView.swift */,
+				49EFED142CAC9EDF00A2BBD3 /* WaterDrinkSelectModel.swift */,
+				49EFED122CAB59EF00A2BBD3 /* MetricsAllSetView.swift */,
 			);
 			path = GetMetricsPages;
 			sourceTree = "<group>";
@@ -256,6 +278,24 @@
 			path = ButtonStyle;
 			sourceTree = "<group>";
 		};
+		49EFED0B2CAB4F7500A2BBD3 /* LoginAndRegister */ = {
+			isa = PBXGroup;
+			children = (
+				49EFED0E2CAB53AD00A2BBD3 /* TestingVIew.swift */,
+				49EFED0C2CAB4F9100A2BBD3 /* LoginView.swift */,
+				49EFED102CAB58B700A2BBD3 /* RegisterView.swift */,
+			);
+			path = LoginAndRegister;
+			sourceTree = "<group>";
+		};
+		49EFED162CACA3C900A2BBD3 /* MeshGrdient */ = {
+			isa = PBXGroup;
+			children = (
+				49EFED172CACA3DC00A2BBD3 /* MeshGradientViewModel.swift */,
+			);
+			path = MeshGrdient;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -292,7 +332,7 @@
 				};
 			};
 			buildConfigurationList = 49A308C62CA474DF00EA1873 /* Build configuration list for PBXProject "VashFitApp" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -336,15 +376,23 @@
 				49A309182CA61F5D00EA1873 /* BodyTypeSelectView.swift in Sources */,
 				49A3090C2CA48C0800EA1873 /* AgeSelectView.swift in Sources */,
 				49A309082CA4846200EA1873 /* ButtonStyleView.swift in Sources */,
+				49EFED0D2CAB4F9100A2BBD3 /* LoginView.swift in Sources */,
 				49A308D12CA474DF00EA1873 /* HomePageView.swift in Sources */,
+				49EFED0F2CAB53AD00A2BBD3 /* TestingVIew.swift in Sources */,
 				49A3090E2CA48D1800EA1873 /* CustomPickerView.swift in Sources */,
+				49EFED152CAC9EDF00A2BBD3 /* WaterDrinkSelectModel.swift in Sources */,
 				49A309122CA5DA7300EA1873 /* HeightSelectView.swift in Sources */,
+				49EFED182CACA3DC00A2BBD3 /* MeshGradientViewModel.swift in Sources */,
+				49EFED112CAB58B700A2BBD3 /* RegisterView.swift in Sources */,
 				49A3091C2CA9A96D00EA1873 /* MainGoalSelectView.swift in Sources */,
+				49A309202CAB0C9900EA1873 /* WaterDrinkSelectView.swift in Sources */,
 				49A308CF2CA474DF00EA1873 /* VashFitAppApp.swift in Sources */,
 				49A3090A2CA4885F00EA1873 /* GenderSelectView.swift in Sources */,
+				49EFED132CAB59EF00A2BBD3 /* MetricsAllSetView.swift in Sources */,
 				49A309102CA5C15B00EA1873 /* WightSelectVIew.swift in Sources */,
 				49A308F32CA47B5300EA1873 /* WelcomePageView.swift in Sources */,
 				49A3091A2CA622EB00EA1873 /* BodyTypeModel.swift in Sources */,
+				49A3091E2CAAF3CA00EA1873 /* ActivitiesSelectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

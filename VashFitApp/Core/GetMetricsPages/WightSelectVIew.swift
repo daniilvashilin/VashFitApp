@@ -16,8 +16,8 @@ struct WightSelectVIew: View {
             Color.backGroundMain
                 .edgesIgnoringSafeArea(.all)
             VStack {
-                Text("What is your age?")
-                    .font(.custom("Kameron", size: 30))
+                Text("What is your wight?")
+                    .font(.custom("Kameron", size: 28))
                     .foregroundStyle(.text)
                     .padding(.bottom)
                 
