@@ -33,9 +33,9 @@ struct LoginView: View {
                     .background(.backGroundSecond)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                 Button {
-                    // Action register
+                    // Action
                 } label: {
-                    Text("Register")
+                    Text("Login")
                         .padding()
                         .foregroundStyle(.text)
                         .font(.custom("Kameron", size: 18))
@@ -48,7 +48,6 @@ struct LoginView: View {
                 // Social media Login ***
                 HStack(spacing: 20) {
                     ForEach(vm.categories, id: \.self) {icon in
-                        
                         NavigationLink {
                             icon.destinationView
                         } label: {
@@ -83,22 +82,22 @@ enum SocialMediaIcons: String, CaseIterable, Hashable {
     var destinationView: some View {
         switch self {
         case .apple:
-            TestingVIew()  // Replace with your custom view
+            HomePageView()  // Replace with your custom view
         case .google:
-            TestingVIew()  // Replace with your custom view
+            HomePageView()  // Replace with your custom view
         case .faecbook:
-            TestingVIew()  // Replace with your custom view
+            HomePageView()  // Replace with your custom view
         }
     }
     
     var title: String {
         switch self {
         case .apple:
-            return "TestingView"
+            return "HomePageView"
         case .google:
-            return "TestingView"
+            return "HomePageView"
         case .faecbook:
-            return "TestingView"
+            return "HomePageView"
         }
     }
 }
