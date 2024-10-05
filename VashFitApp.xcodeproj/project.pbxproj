@@ -61,6 +61,8 @@
 		49EFED4F2CADB47100A2BBD3 /* DateShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED4E2CADB47100A2BBD3 /* DateShowViewModel.swift */; };
 		49EFED512CADB76E00A2BBD3 /* CaloriesIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED502CADB76E00A2BBD3 /* CaloriesIndexView.swift */; };
 		49EFED532CADB92D00A2BBD3 /* OtherIndexesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED522CADB92C00A2BBD3 /* OtherIndexesView.swift */; };
+		49EFED552CB0DE6900A2BBD3 /* GlobalPersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED542CB0DE6900A2BBD3 /* GlobalPersonModel.swift */; };
+		49EFED572CB0E3EE00A2BBD3 /* GlobalPersonsStorageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED562CB0E3EE00A2BBD3 /* GlobalPersonsStorageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +123,8 @@
 		49EFED4E2CADB47100A2BBD3 /* DateShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateShowViewModel.swift; sourceTree = "<group>"; };
 		49EFED502CADB76E00A2BBD3 /* CaloriesIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesIndexView.swift; sourceTree = "<group>"; };
 		49EFED522CADB92C00A2BBD3 /* OtherIndexesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherIndexesView.swift; sourceTree = "<group>"; };
+		49EFED542CB0DE6900A2BBD3 /* GlobalPersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalPersonModel.swift; sourceTree = "<group>"; };
+		49EFED562CB0E3EE00A2BBD3 /* GlobalPersonsStorageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalPersonsStorageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +238,8 @@
 		49A308EA2CA4772200EA1873 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				49EFED542CB0DE6900A2BBD3 /* GlobalPersonModel.swift */,
+				49EFED562CB0E3EE00A2BBD3 /* GlobalPersonsStorageModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -506,6 +512,7 @@
 				49EFED152CAC9EDF00A2BBD3 /* WaterDrinkSelectModel.swift in Sources */,
 				49A309122CA5DA7300EA1873 /* HeightSelectView.swift in Sources */,
 				49EFED512CADB76E00A2BBD3 /* CaloriesIndexView.swift in Sources */,
+				49EFED552CB0DE6900A2BBD3 /* GlobalPersonModel.swift in Sources */,
 				49EFED112CAB58B700A2BBD3 /* RegisterView.swift in Sources */,
 				49A3091C2CA9A96D00EA1873 /* MainGoalSelectView.swift in Sources */,
 				49A309202CAB0C9900EA1873 /* WaterDrinkSelectView.swift in Sources */,
@@ -513,6 +520,7 @@
 				49A308CF2CA474DF00EA1873 /* VashFitAppApp.swift in Sources */,
 				49A3090A2CA4885F00EA1873 /* GenderSelectView.swift in Sources */,
 				49EFED132CAB59EF00A2BBD3 /* MetricsAllSetView.swift in Sources */,
+				49EFED572CB0E3EE00A2BBD3 /* GlobalPersonsStorageModel.swift in Sources */,
 				49EFED1A2CADAB2700A2BBD3 /* HeaderView.swift in Sources */,
 				49A309102CA5C15B00EA1873 /* WightSelectVIew.swift in Sources */,
 				49A308F32CA47B5300EA1873 /* WelcomePageView.swift in Sources */,
