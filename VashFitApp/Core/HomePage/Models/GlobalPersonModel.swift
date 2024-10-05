@@ -17,8 +17,9 @@ class GlobalPersonModel {
     var activities: Activities?
     var drinkWater: DrinkWater?
     var name: String?
+    var id = UUID().uuidString
     
-    init(weight: Double? = nil, height: Double? = nil, gender: Gender? = nil, age: Double? = nil, bodyType: BodyType? = nil, mainGoal: MainGoal? = nil, activities: Activities? = nil, drinkWater: DrinkWater? = nil, name: String? = nil) {
+    init(weight: Double? = nil, height: Double? = nil, gender: Gender? = nil, age: Double? = nil, bodyType: BodyType? = nil, mainGoal: MainGoal? = nil, activities: Activities? = nil, drinkWater: DrinkWater? = nil, name: String? = nil, id: String = UUID().uuidString) {
         self.weight = weight
         self.height = height
         self.gender = gender
@@ -28,6 +29,7 @@ class GlobalPersonModel {
         self.activities = activities
         self.drinkWater = drinkWater
         self.name = name
+        self.id = id
     }
     
     enum Activities {

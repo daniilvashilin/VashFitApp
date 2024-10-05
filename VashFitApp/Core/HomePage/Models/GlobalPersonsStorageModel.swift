@@ -21,7 +21,17 @@ struct someNEwView: View {
     var body: some View {
         VStack {
             Button(action: {
-                let newPerson = GlobalPersonModel(weight: 75, height: 178, gender: .male, age: 30, bodyType: .athletic, mainGoal: .stayFit, activities: .gym, drinkWater: .twoToMore)
+                let newPerson = GlobalPersonModel(
+                    weight: 75.3,
+                    height: 178,
+                    gender: .male,
+                    age: 30,
+                    bodyType: .athletic,
+                    mainGoal: .stayFit,
+                    activities: .gym,
+                    drinkWater: .twoToMore,
+                    name: "John Doe"
+                )
                 vm.addPerson(person: newPerson)
             }) {
                 Text("Add User")
@@ -29,7 +39,7 @@ struct someNEwView: View {
             
             ForEach(vm.usersStorage.indices, id: \.self) { index in
                 let user = vm.usersStorage[index]
-                Text("User: \(user.age ?? 0), weight: \(user.weight ?? 0)")
+                Text("Name: \(user.name ?? "Unknown"), Age: \(Int(user.age ?? 0)), Weight: \(String(format: "%.1f", user.weight ?? 0))")
                     .font(.largeTitle)
                     .foregroundStyle(.black)
             }
