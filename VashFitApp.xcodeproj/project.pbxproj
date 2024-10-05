@@ -61,8 +61,10 @@
 		49EFED4F2CADB47100A2BBD3 /* DateShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED4E2CADB47100A2BBD3 /* DateShowViewModel.swift */; };
 		49EFED512CADB76E00A2BBD3 /* CaloriesIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED502CADB76E00A2BBD3 /* CaloriesIndexView.swift */; };
 		49EFED532CADB92D00A2BBD3 /* OtherIndexesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED522CADB92C00A2BBD3 /* OtherIndexesView.swift */; };
-		49EFED552CB0DE6900A2BBD3 /* GlobalPersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED542CB0DE6900A2BBD3 /* GlobalPersonModel.swift */; };
-		49EFED572CB0E3EE00A2BBD3 /* GlobalPersonsStorageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED562CB0E3EE00A2BBD3 /* GlobalPersonsStorageModel.swift */; };
+		49EFED5E2CB136C900A2BBD3 /* UserParametersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED5D2CB136C900A2BBD3 /* UserParametersModel.swift */; };
+		49EFED602CB137F400A2BBD3 /* UserDataStorageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED5F2CB137F400A2BBD3 /* UserDataStorageModel.swift */; };
+		49EFED622CB138FD00A2BBD3 /* UserCalculationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED612CB138FD00A2BBD3 /* UserCalculationsModel.swift */; };
+		49EFED642CB13CC500A2BBD3 /* GetUserDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFED632CB13CC500A2BBD3 /* GetUserDataViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,8 +125,10 @@
 		49EFED4E2CADB47100A2BBD3 /* DateShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateShowViewModel.swift; sourceTree = "<group>"; };
 		49EFED502CADB76E00A2BBD3 /* CaloriesIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesIndexView.swift; sourceTree = "<group>"; };
 		49EFED522CADB92C00A2BBD3 /* OtherIndexesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherIndexesView.swift; sourceTree = "<group>"; };
-		49EFED542CB0DE6900A2BBD3 /* GlobalPersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalPersonModel.swift; sourceTree = "<group>"; };
-		49EFED562CB0E3EE00A2BBD3 /* GlobalPersonsStorageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalPersonsStorageModel.swift; sourceTree = "<group>"; };
+		49EFED5D2CB136C900A2BBD3 /* UserParametersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserParametersModel.swift; sourceTree = "<group>"; };
+		49EFED5F2CB137F400A2BBD3 /* UserDataStorageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataStorageModel.swift; sourceTree = "<group>"; };
+		49EFED612CB138FD00A2BBD3 /* UserCalculationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCalculationsModel.swift; sourceTree = "<group>"; };
+		49EFED632CB13CC500A2BBD3 /* GetUserDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserDataViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,7 +214,7 @@
 		49A308E72CA4770900EA1873 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				49A308EA2CA4772200EA1873 /* Models */,
+				49EFED5C2CB136A700A2BBD3 /* Models */,
 				49A308E92CA4771A00EA1873 /* ViewModels */,
 				49A308E82CA4771200EA1873 /* Views */,
 			);
@@ -231,17 +235,9 @@
 		49A308E92CA4771A00EA1873 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				49EFED632CB13CC500A2BBD3 /* GetUserDataViewModel.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		49A308EA2CA4772200EA1873 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				49EFED542CB0DE6900A2BBD3 /* GlobalPersonModel.swift */,
-				49EFED562CB0E3EE00A2BBD3 /* GlobalPersonsStorageModel.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		49A308EB2CA4774F00EA1873 /* ChartsPage */ = {
@@ -403,6 +399,16 @@
 			path = Date;
 			sourceTree = "<group>";
 		};
+		49EFED5C2CB136A700A2BBD3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49EFED5D2CB136C900A2BBD3 /* UserParametersModel.swift */,
+				49EFED5F2CB137F400A2BBD3 /* UserDataStorageModel.swift */,
+				49EFED612CB138FD00A2BBD3 /* UserCalculationsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -507,24 +513,26 @@
 				49EFED1D2CADAC8A00A2BBD3 /* PhotoPickerModel.swift in Sources */,
 				49EFED0D2CAB4F9100A2BBD3 /* LoginView.swift in Sources */,
 				49A308D12CA474DF00EA1873 /* HomePageView.swift in Sources */,
+				49EFED622CB138FD00A2BBD3 /* UserCalculationsModel.swift in Sources */,
 				49EFED0F2CAB53AD00A2BBD3 /* TestingVIew.swift in Sources */,
 				49A3090E2CA48D1800EA1873 /* CustomPickerView.swift in Sources */,
 				49EFED152CAC9EDF00A2BBD3 /* WaterDrinkSelectModel.swift in Sources */,
+				49EFED602CB137F400A2BBD3 /* UserDataStorageModel.swift in Sources */,
 				49A309122CA5DA7300EA1873 /* HeightSelectView.swift in Sources */,
 				49EFED512CADB76E00A2BBD3 /* CaloriesIndexView.swift in Sources */,
-				49EFED552CB0DE6900A2BBD3 /* GlobalPersonModel.swift in Sources */,
 				49EFED112CAB58B700A2BBD3 /* RegisterView.swift in Sources */,
+				49EFED642CB13CC500A2BBD3 /* GetUserDataViewModel.swift in Sources */,
 				49A3091C2CA9A96D00EA1873 /* MainGoalSelectView.swift in Sources */,
 				49A309202CAB0C9900EA1873 /* WaterDrinkSelectView.swift in Sources */,
 				49EFED532CADB92D00A2BBD3 /* OtherIndexesView.swift in Sources */,
 				49A308CF2CA474DF00EA1873 /* VashFitAppApp.swift in Sources */,
 				49A3090A2CA4885F00EA1873 /* GenderSelectView.swift in Sources */,
 				49EFED132CAB59EF00A2BBD3 /* MetricsAllSetView.swift in Sources */,
-				49EFED572CB0E3EE00A2BBD3 /* GlobalPersonsStorageModel.swift in Sources */,
 				49EFED1A2CADAB2700A2BBD3 /* HeaderView.swift in Sources */,
 				49A309102CA5C15B00EA1873 /* WightSelectVIew.swift in Sources */,
 				49A308F32CA47B5300EA1873 /* WelcomePageView.swift in Sources */,
 				49A3091A2CA622EB00EA1873 /* BodyTypeModel.swift in Sources */,
+				49EFED5E2CB136C900A2BBD3 /* UserParametersModel.swift in Sources */,
 				49A3091E2CAAF3CA00EA1873 /* ActivitiesSelectView.swift in Sources */,
 				49EFED4F2CADB47100A2BBD3 /* DateShowViewModel.swift in Sources */,
 			);
