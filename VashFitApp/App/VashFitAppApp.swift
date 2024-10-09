@@ -7,7 +7,8 @@
 
 import SwiftUI
 import PhotosUI
-
+import Firebase
+import FirebaseFirestore
 @main
 struct VashFitAppApp: App {
     var body: some Scene {
