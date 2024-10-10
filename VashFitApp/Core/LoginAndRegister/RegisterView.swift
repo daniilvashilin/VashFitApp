@@ -10,6 +10,7 @@ import SwiftUI
 struct RegisterView: View {
     @State private var password = ""
     @State private var email = ""
+    @StateObject var loginVM = Login()
     @StateObject var vm = IconCategoryViewModel()
     var body: some View {
         ZStack {
@@ -39,7 +40,8 @@ struct RegisterView: View {
                     .background(.backGroundSecond)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                 Button {
-                    // Action register
+                    let login = Login(email: email, password: password)
+                    login.createUser()
                 } label: {
                     Text("Register")
                         .padding()

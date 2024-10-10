@@ -9,8 +9,12 @@ import SwiftUI
 import PhotosUI
 import Firebase
 import FirebaseFirestore
+import FirebaseCore
 @main
 struct VashFitAppApp: App {
+    init() {
+           FirebaseApp.configure()
+       }
     var body: some Scene {
         WindowGroup {
             NavigationStack {
