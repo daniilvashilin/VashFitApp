@@ -30,11 +30,12 @@ class Login: ObservableObject {
         }
     }
     
-    func Login() {
-        Auth.auth().signIn(withEmail: <#T##String#>, password: <#T##String#>) { authResult, error in
+    func signIn() {
+        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
             if let error = error {
+                print("Ошибка при входе пользователя: \(error.localizedDescription)")
             } else {
-                
+                print("Пользователь успешно зашёл: \(authResult?.user.uid ?? "Нет UID")")
             }
         }
     }

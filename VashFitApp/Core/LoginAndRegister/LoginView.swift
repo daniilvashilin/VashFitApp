@@ -11,6 +11,8 @@ struct LoginView: View {
     @State private var password = ""
     @State private var email = ""
     @StateObject var vm = IconCategoryViewModel()
+    @StateObject var loginVM = Login()
+    
     var body: some View {
         ZStack {
             Color.backGroundMain
@@ -33,7 +35,7 @@ struct LoginView: View {
                     .background(.backGroundSecond)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                 Button {
-                    // Action
+                    loginVM.signIn()
                 } label: {
                     Text("Login")
                         .padding()
